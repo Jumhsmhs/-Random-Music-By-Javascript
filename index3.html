@@ -1,0 +1,78 @@
+<!-- อันนี้คือหน้าเว็บเพจของเรา -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- meta charset="utf-8" ใส่เพื่อให้ html นี้สามารถใช้ภาษาไทยเข้ามาได้ชัวร์ๆ -->
+    <meta charset="utf-8">
+    <title> Index </title>
+</head>
+<style>
+    body {
+        background-color: #CEB0B0; /*สีของพื้นหลัง*/
+    }
+
+    h1 {
+        color: white; /*สีของตัวอักษรข้อความใน h1*/
+        text-align: center; /*ให้ข้อความที่่้เรากำหนดอยู่ตรงกลาง*/
+        margin-top: 50px; /*เว้นระยะขอบบนลงมา 50 px*/
+    }
+
+    p {
+        font-family: verdana; /*การเลือกใช้ font*/
+        font-size: 20px; /*ขนาดของตัวอักษร*/
+        margin-top: 50px; /*เว้นระยะขอบบนลงมา 50 px*/
+        text-align: center; /*ให้ข้อความที่่้เรากำหนดอยู่ตรงกลาง*/
+    }
+
+    .output-center{
+        color: white;  /*สีของตัวอักษรข้อความ*/
+        margin-top: 50px; /*เว้นระยะขอบบนลงมา 50 px*/
+        text-align: center; /*ให้ข้อความที่่้เรากำหนดอยู่ตรงกลาง*/
+        font-size: 20px;  /*ขนาดของตัวอักษร*/
+    }
+    .font-btn-random{
+        color: white;  /*สีของตัวอักษรข้อความใน*/
+        font-size: medium; /*ขนาดของตัวอักษรเราจะกำหนดเองก็ได้หรือจะเลือกระบุไปเลยก็ได้*/
+        border: 2px solid #78D9B6; /*ระบุรูปแบบความกว้าง สี เส้นขอบ*/
+        background-color: #78D9B6; /*สีพื้นหลัง*/
+        border: none;
+        padding: 15px 32px; /*การขยับกรอบเข้ามาภายในวัตถุ*/
+        text-align: center;
+        display: inline-block; /*เรียงกันแนวนอนและมีพื้นที่ด้านใน ตามที่เรากำหนด*/
+        font-size: 16px;
+        margin: 4px 5px; /*แบบนี้จะเข้าใน-ขยับออกขวาไป 5px*/
+        cursor: pointer; /*เป็นคำสั่งที่เอาไว้ใช้เปลี่ยนเวลาขยับเมาท์มาที่ button*/
+    }
+    .font-btn-stop{
+        color: white;
+        font-size: medium;
+        border: 2px solid #D37C7C;
+        background-color: #D37C7C;
+        border: none;
+        padding: 15px 32px;
+        text-align: center;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 5px; /*แบบนี้จะเข้าใน-ขยับออกซ้ายไป 5px*/
+        cursor: pointer;
+    }
+
+</style>
+<boby>
+
+    <div>
+        <h1> MUSIC RANDOM </h1>
+    </div>
+    <div >
+        <P class="btn-center">
+            <button class="font-btn-random" id="random"> Random Now! </button> 
+            <button class="font-btn-stop" id="stop"> Stop Random</button>
+        </P>
+       
+        <div class="output-center" id="output"></div>
+    </div>
+    <script src='index3.js'></script>
+</boby>
+
+</html>
